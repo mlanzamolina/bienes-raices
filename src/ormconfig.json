@@ -1,0 +1,14 @@
+{
+    "type": "mssql",
+    "host": "DESVM-BCORES3\\BDCORES3",
+    "port": 1433,
+    "username": "desarrollo",
+    "password": "123456",
+    "database": "bienes-raices",
+    "synchronize": true,  // Optional: Automatically create database tables based on your entities
+    "logging": true,  // Optional: Enable logging for debugging
+    "entities": ["dist/**/*.entity{.ts,.js}"],  // Path to your entity files
+    "migrations": ["dist/migrations/*{.ts,.js}"],  // Path to your migration files (optional)
+    "subscribers": ["dist/subscribers/*{.ts,.js}"]  // Path to your subscribers files (optional)
+  }
+  
